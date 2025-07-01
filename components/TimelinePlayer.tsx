@@ -1,7 +1,6 @@
 'use client'
 
 import { useState, useRef, useCallback, useEffect } from 'react'
-import styles from './TimelinePlayer.module.css'
 
 interface TimelinePlayerProps {
   minYear?: number
@@ -132,8 +131,8 @@ export default function TimelinePlayer({
           <div className="relative h-2 bg-gray-200 rounded-full">
             {/* Progress Track */}
             <div
-              className={`absolute top-0 left-0 h-2 bg-blue-500 rounded-full transition-all duration-100 ${styles.progressTrack}`}
-              style={{ '--width-percentage': `${percentage}%` } as React.CSSProperties}
+              className="absolute top-0 left-0 h-2 bg-blue-500 rounded-full transition-all duration-100"
+              style={{ width: `${percentage}%` }}
             />
             
             {/* Slider Input */}
@@ -150,8 +149,8 @@ export default function TimelinePlayer({
             
             {/* Slider Thumb */}
             <div
-              className={`absolute top-1/2 transform -translate-y-1/2 -translate-x-1/2 w-6 h-6 bg-white border-4 border-blue-500 rounded-full shadow-lg cursor-pointer transition-all duration-100 hover:scale-110 ${styles.sliderThumb}`}
-              style={{ '--left-percentage': `${percentage}%` } as React.CSSProperties}
+              className="absolute top-1/2 transform -translate-y-1/2 -translate-x-1/2 w-6 h-6 bg-white border-4 border-blue-500 rounded-full shadow-lg cursor-pointer transition-all duration-100 hover:scale-110"
+              style={{ left: `${percentage}%` }}
             />
           </div>
 
