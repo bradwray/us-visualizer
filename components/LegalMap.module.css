@@ -1,0 +1,14 @@
+.legendItem {
+  width: 1rem;
+  height: 1rem;
+  border-radius: 0.25rem;
+  border: 1px solid #d1d5db;
+}
+
+.legendItemIllegal {
+  background-color: #DC2626;
+}
+
+.legendItemLegal {
+  background-color: #16A34A;
+}
