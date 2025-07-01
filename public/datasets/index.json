@@ -1,0 +1,25 @@
+{
+  "datasets": [
+    {
+      "id": "cannabis",
+      "title": "Cannabis Legalization",
+      "description": "Medical and recreational cannabis legalization across US states",
+      "filename": "cannabis.json",
+      "years": "1996-2024"
+    },
+    {
+      "id": "marriage", 
+      "title": "Same-Sex Marriage",
+      "description": "Same-sex marriage legalization timeline",
+      "filename": "marriage.json",
+      "years": "2003-2015"
+    },
+    {
+      "id": "bottlerocket",
+      "title": "Bottle Rocket Fireworks", 
+      "description": "Legal status of bottle rocket fireworks by state",
+      "filename": "bottlerocket.json",
+      "years": "1997-2025"
+    }
+  ]
+}

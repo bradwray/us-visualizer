@@ -46,3 +46,20 @@ export function getStatusForYear(
   
   return mostRecentStatus;
 }
+
+// Alternative format for timeline data (used in demo files)
+export interface TimelineEvent {
+  year: number;
+  status: string;
+}
+
+export interface TimelineState {
+  state: string;
+  events: TimelineEvent[];
+}
+
+export interface TimelineDataset {
+  title: string;
+  factor: string;
+  data: TimelineState[];
+}

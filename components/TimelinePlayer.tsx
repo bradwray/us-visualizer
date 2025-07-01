@@ -85,11 +85,11 @@ export default function TimelinePlayer({
   const percentage = ((value - minYear) / (maxYear - minYear)) * 100
 
   return (
-    <div className="w-full max-w-4xl mx-auto bg-white rounded-lg shadow-lg p-6">
+    <div className="w-full max-w-4xl mx-auto bg-white rounded-lg shadow-lg p-6" data-testid="timeline-player">
       {/* Title and Current Year */}
       <div className="text-center mb-6">
         <h2 className="text-2xl font-bold text-gray-800 mb-2">Timeline Player</h2>
-        <div className="text-3xl font-mono font-bold text-blue-600">
+        <div className="text-3xl font-mono font-bold text-blue-600" data-testid="year-display">
           {value}
         </div>
       </div>
@@ -111,6 +111,8 @@ export default function TimelinePlayer({
             }
           `}
           aria-label={isPlaying ? 'Pause' : 'Play'}
+          aria-pressed={isPlaying ? 'true' : 'false'}
+          data-testid="play-pause-button"
         >
           {isPlaying ? (
             // Pause icon
@@ -145,6 +147,7 @@ export default function TimelinePlayer({
               onChange={handleSliderChange}
               className="absolute top-0 left-0 w-full h-2 opacity-0 cursor-pointer"
               aria-label={`Timeline slider, current year: ${value}`}
+              data-testid="timeline-slider"
             />
             
             {/* Slider Thumb */}

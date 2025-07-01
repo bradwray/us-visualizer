@@ -1,0 +1,36 @@
+{
+  "title": "Same-Sex Marriage Legalization in the United States",
+  "factor": "Same-Sex Marriage Legal Status",
+  "data": [
+    {
+      "state": "Massachusetts",
+      "events": [
+        { "year": 2003, "status": "legal" }
+      ]
+    },
+    {
+      "state": "Connecticut",
+      "events": [
+        { "year": 2008, "status": "legal" }
+      ]
+    },
+    {
+      "state": "California",
+      "events": [
+        { "year": 2013, "status": "legal" }
+      ]
+    },
+    {
+      "state": "New York",
+      "events": [
+        { "year": 2011, "status": "legal" }
+      ]
+    },
+    {
+      "state": "Florida",
+      "events": [
+        { "year": 2015, "status": "legal" }
+      ]
+    }
+  ]
+}

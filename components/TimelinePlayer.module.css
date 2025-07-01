@@ -1,0 +1,7 @@
+.progressTrack {
+  width: var(--width-percentage);
+}
+
+.sliderThumb {
+  left: var(--left-percentage);
+}

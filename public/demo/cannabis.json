@@ -1,0 +1,252 @@
+{
+  "title": "Cannabis Legalization in the United States",
+  "factor": "Cannabis Legal Status",
+  "data": [
+    {
+      "state": "California",
+      "events": [
+        { "year": 1996, "status": "medical" },
+        { "year": 2016, "status": "legal" }
+      ]
+    },
+    {
+      "state": "Colorado",
+      "events": [
+        { "year": 2000, "status": "medical" },
+        { "year": 2012, "status": "legal" }
+      ]
+    },
+    {
+      "state": "Washington",
+      "events": [
+        { "year": 1998, "status": "medical" },
+        { "year": 2012, "status": "legal" }
+      ]
+    },
+    {
+      "state": "Oregon",
+      "events": [
+        { "year": 1998, "status": "medical" },
+        { "year": 2014, "status": "legal" }
+      ]
+    },
+    {
+      "state": "Alaska",
+      "events": [
+        { "year": 1998, "status": "medical" },
+        { "year": 2014, "status": "legal" }
+      ]
+    },
+    {
+      "state": "Nevada",
+      "events": [
+        { "year": 2000, "status": "medical" },
+        { "year": 2016, "status": "legal" }
+      ]
+    },
+    {
+      "state": "Massachusetts",
+      "events": [
+        { "year": 2012, "status": "medical" },
+        { "year": 2016, "status": "legal" }
+      ]
+    },
+    {
+      "state": "Maine",
+      "events": [
+        { "year": 1999, "status": "medical" },
+        { "year": 2016, "status": "legal" }
+      ]
+    },
+    {
+      "state": "Vermont",
+      "events": [
+        { "year": 2004, "status": "medical" },
+        { "year": 2018, "status": "legal" }
+      ]
+    },
+    {
+      "state": "Michigan",
+      "events": [
+        { "year": 2008, "status": "medical" },
+        { "year": 2018, "status": "legal" }
+      ]
+    },
+    {
+      "state": "Illinois",
+      "events": [
+        { "year": 2013, "status": "medical" },
+        { "year": 2020, "status": "legal" }
+      ]
+    },
+    {
+      "state": "Arizona",
+      "events": [
+        { "year": 2010, "status": "medical" },
+        { "year": 2020, "status": "legal" }
+      ]
+    },
+    {
+      "state": "Montana",
+      "events": [
+        { "year": 2004, "status": "medical" },
+        { "year": 2020, "status": "legal" }
+      ]
+    },
+    {
+      "state": "New Jersey",
+      "events": [
+        { "year": 2010, "status": "medical" },
+        { "year": 2021, "status": "legal" }
+      ]
+    },
+    {
+      "state": "New York",
+      "events": [
+        { "year": 2014, "status": "medical" },
+        { "year": 2021, "status": "legal" }
+      ]
+    },
+    {
+      "state": "Connecticut",
+      "events": [
+        { "year": 2012, "status": "medical" },
+        { "year": 2021, "status": "legal" }
+      ]
+    },
+    {
+      "state": "New Mexico",
+      "events": [
+        { "year": 2007, "status": "medical" },
+        { "year": 2021, "status": "legal" }
+      ]
+    },
+    {
+      "state": "Virginia",
+      "events": [
+        { "year": 2015, "status": "medical" },
+        { "year": 2021, "status": "legal" }
+      ]
+    },
+    {
+      "state": "Rhode Island",
+      "events": [
+        { "year": 2006, "status": "medical" },
+        { "year": 2022, "status": "legal" }
+      ]
+    },
+    {
+      "state": "Maryland",
+      "events": [
+        { "year": 2014, "status": "medical" },
+        { "year": 2023, "status": "legal" }
+      ]
+    },
+    {
+      "state": "Missouri",
+      "events": [
+        { "year": 2018, "status": "medical" },
+        { "year": 2023, "status": "legal" }
+      ]
+    },
+    {
+      "state": "Delaware",
+      "events": [
+        { "year": 2011, "status": "medical" },
+        { "year": 2023, "status": "legal" }
+      ]
+    },
+    {
+      "state": "Minnesota",
+      "events": [
+        { "year": 2014, "status": "medical" },
+        { "year": 2023, "status": "legal" }
+      ]
+    },
+    {
+      "state": "Ohio",
+      "events": [
+        { "year": 2016, "status": "medical" },
+        { "year": 2023, "status": "legal" }
+      ]
+    },
+    {
+      "state": "Hawaii",
+      "events": [
+        { "year": 2000, "status": "medical" }
+      ]
+    },
+    {
+      "state": "New Hampshire",
+      "events": [
+        { "year": 2013, "status": "medical" }
+      ]
+    },
+    {
+      "state": "Pennsylvania",
+      "events": [
+        { "year": 2016, "status": "medical" }
+      ]
+    },
+    {
+      "state": "Florida",
+      "events": [
+        { "year": 2016, "status": "medical" }
+      ]
+    },
+    {
+      "state": "Arkansas",
+      "events": [
+        { "year": 2016, "status": "medical" }
+      ]
+    },
+    {
+      "state": "North Dakota",
+      "events": [
+        { "year": 2016, "status": "medical" }
+      ]
+    },
+    {
+      "state": "Louisiana",
+      "events": [
+        { "year": 2015, "status": "medical" }
+      ]
+    },
+    {
+      "state": "West Virginia",
+      "events": [
+        { "year": 2017, "status": "medical" }
+      ]
+    },
+    {
+      "state": "Oklahoma",
+      "events": [
+        { "year": 2018, "status": "medical" }
+      ]
+    },
+    {
+      "state": "Utah",
+      "events": [
+        { "year": 2018, "status": "medical" }
+      ]
+    },
+    {
+      "state": "Mississippi",
+      "events": [
+        { "year": 2020, "status": "medical" }
+      ]
+    },
+    {
+      "state": "Alabama",
+      "events": [
+        { "year": 2021, "status": "medical" }
+      ]
+    },
+    {
+      "state": "South Dakota",
+      "events": [
+        { "year": 2020, "status": "medical" }
+      ]
+    }
+  ]
+}

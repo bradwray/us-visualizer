@@ -5,10 +5,14 @@
   border: 1px solid #d1d5db;
 }
 
-.legendItemIllegal {
-  background-color: #DC2626;
+.legendItemNone {
+  background-color: #DC2626; /* red-600 - none/illegal */
+}
+
+.legendItemMedical {
+  background-color: #F59E0B; /* amber-500 - medical */
 }
 
 .legendItemLegal {
-  background-color: #16A34A;
+  background-color: #16A34A; /* green-600 - fully legal */
 }
