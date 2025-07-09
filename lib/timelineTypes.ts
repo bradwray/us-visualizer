@@ -3,6 +3,7 @@ export type Year = number; // 1776–present
 export interface StatusChange {
   year: Year;
   status: number;
+  sources?: string[];
 }
 
 export interface StateTimeline {

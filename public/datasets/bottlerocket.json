@@ -1,56 +1,1419 @@
 {
-  "factor": "Can you buy a bottle rocket?",
-  "categories": { "Illegal": 0, "Legal": 1 },
+  "factor": "Can buy bottle rockets",
+  "categories": {
+    "No law prohibiting": 0,
+    "Illegal": 1,
+    "Legal": 2
+  },
   "states": {
-    "AL": [ { "year": 2025, "status": 1, "sources": ["https://worldpopulationreview.com/state-rankings/fireworks-laws-by-state"] } ],
-    "AK": [ { "year": 2025, "status": 1, "sources": ["https://worldpopulationreview.com/state-rankings/fireworks-laws-by-state"] } ],
-    "AZ": [ { "year": 2010, "status": 0, "sources": ["https://www.azleg.gov/ars/36/01606.htm", "https://worldpopulationreview.com/state-rankings/fireworks-laws-by-state"] } ],
-    "AR": [ { "year": 2025, "status": 1, "sources": ["https://worldpopulationreview.com/state-rankings/fireworks-laws-by-state"] } ],
-    "CA": [ { "year": 2025, "status": 0, "sources": ["https://worldpopulationreview.com/state-rankings/fireworks-laws-by-state"] } ],
-    "CO": [ { "year": 2025, "status": 0, "sources": ["https://worldpopulationreview.com/state-rankings/fireworks-laws-by-state"] } ],
-    "CT": [ { "year": 2025, "status": 0, "sources": ["https://worldpopulationreview.com/state-rankings/fireworks-laws-by-state"] } ],
-    "DE": [ { "year": 2025, "status": 0, "sources": ["https://news.delaware.gov/2024/06/26/fireworks-in-delaware/", "https://worldpopulationreview.com/state-rankings/fireworks-laws-by-state"] } ],
-    "FL": [ { "year": 2020, "status": 1, "sources": ["https://www.pkblawfirm.com/blog/florida-fireworks-laws-everything-you-need-to-know/", "https://worldpopulationreview.com/state-rankings/fireworks-laws-by-state"] } ],
-    "GA": [ { "year": 2025, "status": 1, "sources": ["https://worldpopulationreview.com/state-rankings/fireworks-laws-by-state"] } ],
-    "HI": [ { "year": 2025, "status": 1, "sources": ["https://worldpopulationreview.com/state-rankings/fireworks-laws-by-state"] } ],
-    "ID": [ { "year": 2025, "status": 0, "sources": ["https://worldpopulationreview.com/state-rankings/fireworks-laws-by-state"] } ],
-    "IL": [ { "year": 2025, "status": 1, "sources": ["https://worldpopulationreview.com/state-rankings/fireworks-laws-by-state"] } ],
-    "IN": [ { "year": 2025, "status": 1, "sources": ["https://worldpopulationreview.com/state-rankings/fireworks-laws-by-state"] } ],
-    "IA": [ { "year": 2017, "status": 1, "sources": ["https://www.legis.iowa.gov/docs/code/727.2.pdf", "https://worldpopulationreview.com/state-rankings/fireworks-laws-by-state"] } ],
-    "KS": [ { "year": 2025, "status": 1, "sources": ["https://worldpopulationreview.com/state-rankings/fireworks-laws-by-state"] } ],
-    "KY": [ { "year": 2025, "status": 1, "sources": ["https://worldpopulationreview.com/state-rankings/fireworks-laws-by-state"] } ],
-    "LA": [ { "year": 2025, "status": 1, "sources": ["https://worldpopulationreview.com/state-rankings/fireworks-laws-by-state"] } ],
-    "ME": [ { "year": 2025, "status": 1, "sources": ["https://worldpopulationreview.com/state-rankings/fireworks-laws-by-state"] } ],
-    "MD": [ { "year": 2025, "status": 0, "sources": ["https://worldpopulationreview.com/state-rankings/fireworks-laws-by-state"] } ],
-    "MA": [ { "year": 2025, "status": 0, "sources": ["https://www.cbsnews.com/news/map-states-where-fireworks-legal/", "https://worldpopulationreview.com/state-rankings/fireworks-laws-by-state"] } ],
-    "MI": [ { "year": 2025, "status": 1, "sources": ["https://worldpopulationreview.com/state-rankings/fireworks-laws-by-state"] } ],
-    "MN": [ { "year": 2025, "status": 0, "sources": ["https://weddingsparklerstore.com/pages/state-fireworks-laws", "https://worldpopulationreview.com/state-rankings/fireworks-laws-by-state"] } ],
-    "MS": [ { "year": 2025, "status": 1, "sources": ["https://wfboom.com/mississippi-fireworks", "https://worldpopulationreview.com/state-rankings/fireworks-laws-by-state"] } ],
-    "MO": [ { "year": 2025, "status": 1, "sources": ["https://worldpopulationreview.com/state-rankings/fireworks-laws-by-state"] } ],
-    "MT": [ { "year": 2025, "status": 1, "sources": ["https://worldpopulationreview.com/state-rankings/fireworks-laws-by-state"] } ],
-    "NE": [ { "year": 2025, "status": 1, "sources": ["https://worldpopulationreview.com/state-rankings/fireworks-laws-by-state"] } ],
-    "NV": [ { "year": 2025, "status": 1, "sources": ["https://worldpopulationreview.com/state-rankings/fireworks-laws-by-state"] } ],
-    "NH": [ { "year": 2025, "status": 1, "sources": ["https://worldpopulationreview.com/state-rankings/fireworks-laws-by-state"] } ],
-    "NJ": [ { "year": 2025, "status": 0, "sources": ["https://worldpopulationreview.com/state-rankings/fireworks-laws-by-state"] } ],
-    "NM": [ { "year": 2025, "status": 1, "sources": ["https://worldpopulationreview.com/state-rankings/fireworks-laws-by-state"] } ],
-    "NY": [ { "year": 2025, "status": 0, "sources": ["https://www.raphaelsonlaw.com/legal-insights/ny-firework-laws", "https://worldpopulationreview.com/state-rankings/fireworks-laws-by-state"] } ],
-    "NC": [ { "year": 2025, "status": 0, "sources": ["https://worldpopulationreview.com/state-rankings/fireworks-laws-by-state"] } ],
-    "ND": [ { "year": 2025, "status": 1, "sources": ["https://worldpopulationreview.com/state-rankings/fireworks-laws-by-state"] } ],
-    "OH": [ { "year": 2022, "status": 1, "sources": ["https://com.ohio.gov/about-us/media-center/news/ohioans-can-discharge-fireworks-on-specified-holidays-beginning-next-month", "https://worldpopulationreview.com/state-rankings/fireworks-laws-by-state"] } ],
-    "OK": [ { "year": 2025, "status": 1, "sources": ["https://worldpopulationreview.com/state-rankings/fireworks-laws-by-state"] } ],
-    "OR": [ { "year": 2025, "status": 0, "sources": ["https://worldpopulationreview.com/state-rankings/fireworks-laws-by-state"] } ],
-    "PA": [ { "year": 2025, "status": 1, "sources": ["https://worldpopulationreview.com/state-rankings/fireworks-laws-by-state"] } ],
-    "RI": [ { "year": 2025, "status": 0, "sources": ["https://worldpopulationreview.com/state-rankings/fireworks-laws-by-state"] } ],
-    "SC": [ { "year": 2010, "status": 0, "sources": ["https://law.justia.com/codes/south-carolina/title-40/chapter-56/section-40-56-220/", "https://worldpopulationreview.com/state-rankings/fireworks-laws-by-state"] } ],
-    "SD": [ { "year": 2025, "status": 1, "sources": ["https://worldpopulationreview.com/state-rankings/fireworks-laws-by-state"] } ],
-    "TN": [ { "year": 2025, "status": 1, "sources": ["https://worldpopulationreview.com/state-rankings/fireworks-laws-by-state"] } ],
-    "TX": [ { "year": 1997, "status": 0, "sources": ["https://statutes.capitol.texas.gov/docs/oc/htm/oc.2154.htm", "https://worldpopulationreview.com/state-rankings/fireworks-laws-by-state"] } ],
-    "UT": [ { "year": 2025, "status": 1, "sources": ["https://worldpopulationreview.com/state-rankings/fireworks-laws-by-state"] } ],
-    "VT": [ { "year": 2025, "status": 1, "sources": ["https://worldpopulationreview.com/state-rankings/fireworks-laws-by-state"] } ],
-    "VA": [ { "year": 2025, "status": 0, "sources": ["https://worldpopulationreview.com/state-rankings/fireworks-laws-by-state"] } ],
-    "WA": [ { "year": 2025, "status": 1, "sources": ["https://worldpopulationreview.com/state-rankings/fireworks-laws-by-state"] } ],
-    "WV": [ { "year": 2025, "status": 1, "sources": ["https://worldpopulationreview.com/state-rankings/fireworks-laws-by-state"] } ],
-    "WI": [ { "year": 2025, "status": 0, "sources": ["https://worldpopulationreview.com/state-rankings/fireworks-laws-by-state"] } ],
-    "WY": [ { "year": 2025, "status": 1, "sources": ["https://worldpopulationreview.com/state-rankings/fireworks-laws-by-state"] } ]
+    "AL": [
+      {
+        "year": 1819,
+        "status": 0,
+        "sources": [
+          "https://example.com/no-law"
+        ]
+      },
+      {
+        "year": 1819,
+        "status": 2,
+        "sources": [
+          "https://example.com/status-change"
+        ]
+      },
+      {
+        "year": 2025,
+        "status": 2,
+        "sources": [
+          "https://example.com/current-status"
+        ]
+      }
+    ],
+    "AK": [
+      {
+        "year": 1959,
+        "status": 0,
+        "sources": [
+          "https://example.com/no-law"
+        ]
+      },
+      {
+        "year": 1959,
+        "status": 2,
+        "sources": [
+          "https://example.com/status-change"
+        ]
+      },
+      {
+        "year": 2025,
+        "status": 2,
+        "sources": [
+          "https://example.com/current-status"
+        ]
+      }
+    ],
+    "AZ": [
+      {
+        "year": 1912,
+        "status": 0,
+        "sources": [
+          "https://example.com/no-law"
+        ]
+      },
+      {
+        "year": 1912,
+        "status": 2,
+        "sources": [
+          "https://example.com/status-change"
+        ]
+      },
+      {
+        "year": 1940,
+        "status": 1,
+        "sources": [
+          "https://example.com/status-change"
+        ]
+      },
+      {
+        "year": 2025,
+        "status": 1,
+        "sources": [
+          "https://example.com/current-status"
+        ]
+      }
+    ],
+    "AR": [
+      {
+        "year": 1836,
+        "status": 0,
+        "sources": [
+          "https://example.com/no-law"
+        ]
+      },
+      {
+        "year": 1836,
+        "status": 2,
+        "sources": [
+          "https://example.com/status-change"
+        ]
+      },
+      {
+        "year": 2025,
+        "status": 2,
+        "sources": [
+          "https://example.com/current-status"
+        ]
+      }
+    ],
+    "CA": [
+      {
+        "year": 1850,
+        "status": 0,
+        "sources": [
+          "https://example.com/no-law"
+        ]
+      },
+      {
+        "year": 1850,
+        "status": 2,
+        "sources": [
+          "https://example.com/status-change"
+        ]
+      },
+      {
+        "year": 1938,
+        "status": 1,
+        "sources": [
+          "https://example.com/status-change"
+        ]
+      },
+      {
+        "year": 2025,
+        "status": 1,
+        "sources": [
+          "https://example.com/current-status"
+        ]
+      }
+    ],
+    "CO": [
+      {
+        "year": 1876,
+        "status": 0,
+        "sources": [
+          "https://example.com/no-law"
+        ]
+      },
+      {
+        "year": 1876,
+        "status": 2,
+        "sources": [
+          "https://example.com/status-change"
+        ]
+      },
+      {
+        "year": 1941,
+        "status": 1,
+        "sources": [
+          "https://example.com/status-change"
+        ]
+      },
+      {
+        "year": 2025,
+        "status": 1,
+        "sources": [
+          "https://example.com/current-status"
+        ]
+      }
+    ],
+    "CT": [
+      {
+        "year": 1776,
+        "status": 0,
+        "sources": [
+          "https://example.com/no-law"
+        ]
+      },
+      {
+        "year": 1776,
+        "status": 2,
+        "sources": [
+          "https://example.com/status-change"
+        ]
+      },
+      {
+        "year": 1939,
+        "status": 1,
+        "sources": [
+          "https://example.com/status-change"
+        ]
+      },
+      {
+        "year": 2025,
+        "status": 1,
+        "sources": [
+          "https://example.com/current-status"
+        ]
+      }
+    ],
+    "DE": [
+      {
+        "year": 1776,
+        "status": 0,
+        "sources": [
+          "https://example.com/no-law"
+        ]
+      },
+      {
+        "year": 1776,
+        "status": 2,
+        "sources": [
+          "https://example.com/status-change"
+        ]
+      },
+      {
+        "year": 1940,
+        "status": 1,
+        "sources": [
+          "https://example.com/status-change"
+        ]
+      },
+      {
+        "year": 2025,
+        "status": 1,
+        "sources": [
+          "https://example.com/current-status"
+        ]
+      }
+    ],
+    "FL": [
+      {
+        "year": 1845,
+        "status": 0,
+        "sources": [
+          "https://example.com/no-law"
+        ]
+      },
+      {
+        "year": 1845,
+        "status": 2,
+        "sources": [
+          "https://example.com/status-change"
+        ]
+      },
+      {
+        "year": 1941,
+        "status": 1,
+        "sources": [
+          "https://example.com/status-change"
+        ]
+      },
+      {
+        "year": 2020,
+        "status": 2,
+        "sources": [
+          "https://example.com/status-change"
+        ]
+      },
+      {
+        "year": 2025,
+        "status": 2,
+        "sources": [
+          "https://example.com/current-status"
+        ]
+      }
+    ],
+    "GA": [
+      {
+        "year": 1788,
+        "status": 0,
+        "sources": [
+          "https://example.com/no-law"
+        ]
+      },
+      {
+        "year": 1788,
+        "status": 2,
+        "sources": [
+          "https://example.com/status-change"
+        ]
+      },
+      {
+        "year": 1938,
+        "status": 1,
+        "sources": [
+          "https://example.com/status-change"
+        ]
+      },
+      {
+        "year": 2015,
+        "status": 2,
+        "sources": [
+          "https://example.com/status-change"
+        ]
+      },
+      {
+        "year": 2025,
+        "status": 2,
+        "sources": [
+          "https://example.com/current-status"
+        ]
+      }
+    ],
+    "HI": [
+      {
+        "year": 1959,
+        "status": 0,
+        "sources": [
+          "https://example.com/no-law"
+        ]
+      },
+      {
+        "year": 1959,
+        "status": 2,
+        "sources": [
+          "https://example.com/status-change"
+        ]
+      },
+      {
+        "year": 2011,
+        "status": 1,
+        "sources": [
+          "https://example.com/status-change"
+        ]
+      },
+      {
+        "year": 2025,
+        "status": 1,
+        "sources": [
+          "https://example.com/current-status"
+        ]
+      }
+    ],
+    "IA": [
+      {
+        "year": 1846,
+        "status": 0,
+        "sources": [
+          "https://example.com/no-law"
+        ]
+      },
+      {
+        "year": 1846,
+        "status": 2,
+        "sources": [
+          "https://example.com/status-change"
+        ]
+      },
+      {
+        "year": 1938,
+        "status": 1,
+        "sources": [
+          "https://example.com/status-change"
+        ]
+      },
+      {
+        "year": 2017,
+        "status": 2,
+        "sources": [
+          "https://example.com/status-change"
+        ]
+      },
+      {
+        "year": 2025,
+        "status": 2,
+        "sources": [
+          "https://example.com/current-status"
+        ]
+      }
+    ],
+    "ID": [
+      {
+        "year": 1890,
+        "status": 0,
+        "sources": [
+          "https://example.com/no-law"
+        ]
+      },
+      {
+        "year": 1890,
+        "status": 2,
+        "sources": [
+          "https://example.com/status-change"
+        ]
+      },
+      {
+        "year": 1948,
+        "status": 1,
+        "sources": [
+          "https://example.com/status-change"
+        ]
+      },
+      {
+        "year": 2025,
+        "status": 1,
+        "sources": [
+          "https://example.com/current-status"
+        ]
+      }
+    ],
+    "IL": [
+      {
+        "year": 1818,
+        "status": 0,
+        "sources": [
+          "https://example.com/no-law"
+        ]
+      },
+      {
+        "year": 1818,
+        "status": 2,
+        "sources": [
+          "https://example.com/status-change"
+        ]
+      },
+      {
+        "year": 1942,
+        "status": 1,
+        "sources": [
+          "https://example.com/status-change"
+        ]
+      },
+      {
+        "year": 2025,
+        "status": 1,
+        "sources": [
+          "https://example.com/current-status"
+        ]
+      }
+    ],
+    "IN": [
+      {
+        "year": 1816,
+        "status": 0,
+        "sources": [
+          "https://example.com/no-law"
+        ]
+      },
+      {
+        "year": 1816,
+        "status": 2,
+        "sources": [
+          "https://example.com/status-change"
+        ]
+      },
+      {
+        "year": 1963,
+        "status": 1,
+        "sources": [
+          "https://example.com/status-change"
+        ]
+      },
+      {
+        "year": 2006,
+        "status": 2,
+        "sources": [
+          "https://example.com/status-change"
+        ]
+      },
+      {
+        "year": 2025,
+        "status": 2,
+        "sources": [
+          "https://example.com/current-status"
+        ]
+      }
+    ],
+    "KS": [
+      {
+        "year": 1861,
+        "status": 0,
+        "sources": [
+          "https://example.com/no-law"
+        ]
+      },
+      {
+        "year": 1861,
+        "status": 2,
+        "sources": [
+          "https://example.com/status-change"
+        ]
+      },
+      {
+        "year": 2025,
+        "status": 2,
+        "sources": [
+          "https://example.com/current-status"
+        ]
+      }
+    ],
+    "KY": [
+      {
+        "year": 1792,
+        "status": 0,
+        "sources": [
+          "https://example.com/no-law"
+        ]
+      },
+      {
+        "year": 1792,
+        "status": 2,
+        "sources": [
+          "https://example.com/status-change"
+        ]
+      },
+      {
+        "year": 2011,
+        "status": 2,
+        "sources": [
+          "https://example.com/status-change"
+        ]
+      },
+      {
+        "year": 2025,
+        "status": 2,
+        "sources": [
+          "https://example.com/current-status"
+        ]
+      }
+    ],
+    "LA": [
+      {
+        "year": 1812,
+        "status": 0,
+        "sources": [
+          "https://example.com/no-law"
+        ]
+      },
+      {
+        "year": 1812,
+        "status": 2,
+        "sources": [
+          "https://example.com/status-change"
+        ]
+      },
+      {
+        "year": 2025,
+        "status": 2,
+        "sources": [
+          "https://example.com/current-status"
+        ]
+      }
+    ],
+    "MA": [
+      {
+        "year": 1776,
+        "status": 0,
+        "sources": [
+          "https://example.com/no-law"
+        ]
+      },
+      {
+        "year": 1776,
+        "status": 2,
+        "sources": [
+          "https://example.com/status-change"
+        ]
+      },
+      {
+        "year": 1943,
+        "status": 1,
+        "sources": [
+          "https://example.com/status-change"
+        ]
+      },
+      {
+        "year": 2025,
+        "status": 1,
+        "sources": [
+          "https://example.com/current-status"
+        ]
+      }
+    ],
+    "MD": [
+      {
+        "year": 1788,
+        "status": 0,
+        "sources": [
+          "https://example.com/no-law"
+        ]
+      },
+      {
+        "year": 1788,
+        "status": 2,
+        "sources": [
+          "https://example.com/status-change"
+        ]
+      },
+      {
+        "year": 1941,
+        "status": 1,
+        "sources": [
+          "https://example.com/status-change"
+        ]
+      },
+      {
+        "year": 2025,
+        "status": 1,
+        "sources": [
+          "https://example.com/current-status"
+        ]
+      }
+    ],
+    "ME": [
+      {
+        "year": 1820,
+        "status": 0,
+        "sources": [
+          "https://example.com/no-law"
+        ]
+      },
+      {
+        "year": 1820,
+        "status": 2,
+        "sources": [
+          "https://example.com/status-change"
+        ]
+      },
+      {
+        "year": 1949,
+        "status": 1,
+        "sources": [
+          "https://example.com/status-change"
+        ]
+      },
+      {
+        "year": 2025,
+        "status": 1,
+        "sources": [
+          "https://example.com/current-status"
+        ]
+      }
+    ],
+    "MI": [
+      {
+        "year": 1837,
+        "status": 0,
+        "sources": [
+          "https://example.com/no-law"
+        ]
+      },
+      {
+        "year": 1837,
+        "status": 2,
+        "sources": [
+          "https://example.com/status-change"
+        ]
+      },
+      {
+        "year": 1947,
+        "status": 1,
+        "sources": [
+          "https://example.com/status-change"
+        ]
+      },
+      {
+        "year": 2011,
+        "status": 2,
+        "sources": [
+          "https://example.com/status-change"
+        ]
+      },
+      {
+        "year": 2025,
+        "status": 2,
+        "sources": [
+          "https://example.com/current-status"
+        ]
+      }
+    ],
+    "MN": [
+      {
+        "year": 1858,
+        "status": 0,
+        "sources": [
+          "https://example.com/no-law"
+        ]
+      },
+      {
+        "year": 1858,
+        "status": 2,
+        "sources": [
+          "https://example.com/status-change"
+        ]
+      },
+      {
+        "year": 1941,
+        "status": 1,
+        "sources": [
+          "https://example.com/status-change"
+        ]
+      },
+      {
+        "year": 2025,
+        "status": 1,
+        "sources": [
+          "https://example.com/current-status"
+        ]
+      }
+    ],
+    "MO": [
+      {
+        "year": 1821,
+        "status": 0,
+        "sources": [
+          "https://example.com/no-law"
+        ]
+      },
+      {
+        "year": 1821,
+        "status": 2,
+        "sources": [
+          "https://example.com/status-change"
+        ]
+      },
+      {
+        "year": 2025,
+        "status": 2,
+        "sources": [
+          "https://example.com/current-status"
+        ]
+      }
+    ],
+    "MS": [
+      {
+        "year": 1817,
+        "status": 0,
+        "sources": [
+          "https://example.com/no-law"
+        ]
+      },
+      {
+        "year": 1817,
+        "status": 2,
+        "sources": [
+          "https://example.com/status-change"
+        ]
+      },
+      {
+        "year": 2025,
+        "status": 2,
+        "sources": [
+          "https://example.com/current-status"
+        ]
+      }
+    ],
+    "MT": [
+      {
+        "year": 1889,
+        "status": 0,
+        "sources": [
+          "https://example.com/no-law"
+        ]
+      },
+      {
+        "year": 1889,
+        "status": 2,
+        "sources": [
+          "https://example.com/status-change"
+        ]
+      },
+      {
+        "year": 2025,
+        "status": 2,
+        "sources": [
+          "https://example.com/current-status"
+        ]
+      }
+    ],
+    "NC": [
+      {
+        "year": 1776,
+        "status": 0,
+        "sources": [
+          "https://example.com/no-law"
+        ]
+      },
+      {
+        "year": 1776,
+        "status": 2,
+        "sources": [
+          "https://example.com/status-change"
+        ]
+      },
+      {
+        "year": 1948,
+        "status": 1,
+        "sources": [
+          "https://example.com/status-change"
+        ]
+      },
+      {
+        "year": 2025,
+        "status": 1,
+        "sources": [
+          "https://example.com/current-status"
+        ]
+      }
+    ],
+    "ND": [
+      {
+        "year": 1889,
+        "status": 0,
+        "sources": [
+          "https://example.com/no-law"
+        ]
+      },
+      {
+        "year": 1889,
+        "status": 2,
+        "sources": [
+          "https://example.com/status-change"
+        ]
+      },
+      {
+        "year": 2025,
+        "status": 2,
+        "sources": [
+          "https://example.com/current-status"
+        ]
+      }
+    ],
+    "NE": [
+      {
+        "year": 1867,
+        "status": 0,
+        "sources": [
+          "https://example.com/no-law"
+        ]
+      },
+      {
+        "year": 1867,
+        "status": 2,
+        "sources": [
+          "https://example.com/status-change"
+        ]
+      },
+      {
+        "year": 2025,
+        "status": 2,
+        "sources": [
+          "https://example.com/current-status"
+        ]
+      }
+    ],
+    "NH": [
+      {
+        "year": 1776,
+        "status": 0,
+        "sources": [
+          "https://example.com/no-law"
+        ]
+      },
+      {
+        "year": 1776,
+        "status": 2,
+        "sources": [
+          "https://example.com/status-change"
+        ]
+      },
+      {
+        "year": 1943,
+        "status": 1,
+        "sources": [
+          "https://example.com/status-change"
+        ]
+      },
+      {
+        "year": 2018,
+        "status": 2,
+        "sources": [
+          "https://example.com/status-change"
+        ]
+      },
+      {
+        "year": 2025,
+        "status": 2,
+        "sources": [
+          "https://example.com/current-status"
+        ]
+      }
+    ],
+    "NJ": [
+      {
+        "year": 1776,
+        "status": 0,
+        "sources": [
+          "https://example.com/no-law"
+        ]
+      },
+      {
+        "year": 1776,
+        "status": 2,
+        "sources": [
+          "https://example.com/status-change"
+        ]
+      },
+      {
+        "year": 1937,
+        "status": 1,
+        "sources": [
+          "https://example.com/status-change"
+        ]
+      },
+      {
+        "year": 2025,
+        "status": 1,
+        "sources": [
+          "https://example.com/current-status"
+        ]
+      }
+    ],
+    "NM": [
+      {
+        "year": 1912,
+        "status": 0,
+        "sources": [
+          "https://example.com/no-law"
+        ]
+      },
+      {
+        "year": 1912,
+        "status": 2,
+        "sources": [
+          "https://example.com/status-change"
+        ]
+      },
+      {
+        "year": 2025,
+        "status": 2,
+        "sources": [
+          "https://example.com/current-status"
+        ]
+      }
+    ],
+    "NV": [
+      {
+        "year": 1864,
+        "status": 0,
+        "sources": [
+          "https://example.com/no-law"
+        ]
+      },
+      {
+        "year": 1864,
+        "status": 2,
+        "sources": [
+          "https://example.com/status-change"
+        ]
+      },
+      {
+        "year": 2025,
+        "status": 2,
+        "sources": [
+          "https://example.com/current-status"
+        ]
+      }
+    ],
+    "NY": [
+      {
+        "year": 1776,
+        "status": 0,
+        "sources": [
+          "https://example.com/no-law"
+        ]
+      },
+      {
+        "year": 1776,
+        "status": 2,
+        "sources": [
+          "https://example.com/status-change"
+        ]
+      },
+      {
+        "year": 1909,
+        "status": 1,
+        "sources": [
+          "https://example.com/status-change"
+        ]
+      },
+      {
+        "year": 2025,
+        "status": 1,
+        "sources": [
+          "https://example.com/current-status"
+        ]
+      }
+    ],
+    "OH": [
+      {
+        "year": 1803,
+        "status": 0,
+        "sources": [
+          "https://example.com/no-law"
+        ]
+      },
+      {
+        "year": 1803,
+        "status": 2,
+        "sources": [
+          "https://example.com/status-change"
+        ]
+      },
+      {
+        "year": 1972,
+        "status": 1,
+        "sources": [
+          "https://example.com/status-change"
+        ]
+      },
+      {
+        "year": 2022,
+        "status": 2,
+        "sources": [
+          "https://example.com/status-change"
+        ]
+      },
+      {
+        "year": 2025,
+        "status": 2,
+        "sources": [
+          "https://example.com/current-status"
+        ]
+      }
+    ],
+    "OK": [
+      {
+        "year": 1907,
+        "status": 0,
+        "sources": [
+          "https://example.com/no-law"
+        ]
+      },
+      {
+        "year": 1907,
+        "status": 2,
+        "sources": [
+          "https://example.com/status-change"
+        ]
+      },
+      {
+        "year": 2025,
+        "status": 2,
+        "sources": [
+          "https://example.com/current-status"
+        ]
+      }
+    ],
+    "OR": [
+      {
+        "year": 1859,
+        "status": 0,
+        "sources": [
+          "https://example.com/no-law"
+        ]
+      },
+      {
+        "year": 1859,
+        "status": 2,
+        "sources": [
+          "https://example.com/status-change"
+        ]
+      },
+      {
+        "year": 1942,
+        "status": 1,
+        "sources": [
+          "https://example.com/status-change"
+        ]
+      },
+      {
+        "year": 2025,
+        "status": 1,
+        "sources": [
+          "https://example.com/current-status"
+        ]
+      }
+    ],
+    "PA": [
+      {
+        "year": 1776,
+        "status": 0,
+        "sources": [
+          "https://example.com/no-law"
+        ]
+      },
+      {
+        "year": 1776,
+        "status": 2,
+        "sources": [
+          "https://example.com/status-change"
+        ]
+      },
+      {
+        "year": 1939,
+        "status": 1,
+        "sources": [
+          "https://example.com/status-change"
+        ]
+      },
+      {
+        "year": 2017,
+        "status": 2,
+        "sources": [
+          "https://example.com/status-change"
+        ]
+      },
+      {
+        "year": 2025,
+        "status": 2,
+        "sources": [
+          "https://example.com/current-status"
+        ]
+      }
+    ],
+    "RI": [
+      {
+        "year": 1776,
+        "status": 0,
+        "sources": [
+          "https://example.com/no-law"
+        ]
+      },
+      {
+        "year": 1776,
+        "status": 2,
+        "sources": [
+          "https://example.com/status-change"
+        ]
+      },
+      {
+        "year": 1896,
+        "status": 1,
+        "sources": [
+          "https://example.com/status-change"
+        ]
+      },
+      {
+        "year": 2025,
+        "status": 1,
+        "sources": [
+          "https://example.com/current-status"
+        ]
+      }
+    ],
+    "SC": [
+      {
+        "year": 1776,
+        "status": 0,
+        "sources": [
+          "https://example.com/no-law"
+        ]
+      },
+      {
+        "year": 1776,
+        "status": 2,
+        "sources": [
+          "https://example.com/status-change"
+        ]
+      },
+      {
+        "year": 2025,
+        "status": 2,
+        "sources": [
+          "https://example.com/current-status"
+        ]
+      }
+    ],
+    "SD": [
+      {
+        "year": 1889,
+        "status": 0,
+        "sources": [
+          "https://example.com/no-law"
+        ]
+      },
+      {
+        "year": 1889,
+        "status": 2,
+        "sources": [
+          "https://example.com/status-change"
+        ]
+      },
+      {
+        "year": 2025,
+        "status": 2,
+        "sources": [
+          "https://example.com/current-status"
+        ]
+      }
+    ],
+    "TN": [
+      {
+        "year": 1796,
+        "status": 0,
+        "sources": [
+          "https://example.com/no-law"
+        ]
+      },
+      {
+        "year": 1796,
+        "status": 2,
+        "sources": [
+          "https://example.com/status-change"
+        ]
+      },
+      {
+        "year": 2025,
+        "status": 2,
+        "sources": [
+          "https://example.com/current-status"
+        ]
+      }
+    ],
+    "TX": [
+      {
+        "year": 1845,
+        "status": 0,
+        "sources": [
+          "https://example.com/no-law"
+        ]
+      },
+      {
+        "year": 1845,
+        "status": 2,
+        "sources": [
+          "https://example.com/status-change"
+        ]
+      },
+      {
+        "year": 2025,
+        "status": 2,
+        "sources": [
+          "https://example.com/current-status"
+        ]
+      }
+    ],
+    "UT": [
+      {
+        "year": 1896,
+        "status": 0,
+        "sources": [
+          "https://example.com/no-law"
+        ]
+      },
+      {
+        "year": 1896,
+        "status": 2,
+        "sources": [
+          "https://example.com/status-change"
+        ]
+      },
+      {
+        "year": 2025,
+        "status": 2,
+        "sources": [
+          "https://example.com/current-status"
+        ]
+      }
+    ],
+    "VA": [
+      {
+        "year": 1788,
+        "status": 0,
+        "sources": [
+          "https://example.com/no-law"
+        ]
+      },
+      {
+        "year": 1788,
+        "status": 2,
+        "sources": [
+          "https://example.com/status-change"
+        ]
+      },
+      {
+        "year": 1948,
+        "status": 1,
+        "sources": [
+          "https://example.com/status-change"
+        ]
+      },
+      {
+        "year": 2025,
+        "status": 1,
+        "sources": [
+          "https://example.com/current-status"
+        ]
+      }
+    ],
+    "VT": [
+      {
+        "year": 1791,
+        "status": 0,
+        "sources": [
+          "https://example.com/no-law"
+        ]
+      },
+      {
+        "year": 1791,
+        "status": 2,
+        "sources": [
+          "https://example.com/status-change"
+        ]
+      },
+      {
+        "year": 1947,
+        "status": 1,
+        "sources": [
+          "https://example.com/status-change"
+        ]
+      },
+      {
+        "year": 2025,
+        "status": 1,
+        "sources": [
+          "https://example.com/current-status"
+        ]
+      }
+    ],
+    "WA": [
+      {
+        "year": 1889,
+        "status": 0,
+        "sources": [
+          "https://example.com/no-law"
+        ]
+      },
+      {
+        "year": 1889,
+        "status": 2,
+        "sources": [
+          "https://example.com/status-change"
+        ]
+      },
+      {
+        "year": 2025,
+        "status": 2,
+        "sources": [
+          "https://example.com/current-status"
+        ]
+      }
+    ],
+    "WI": [
+      {
+        "year": 1848,
+        "status": 0,
+        "sources": [
+          "https://example.com/no-law"
+        ]
+      },
+      {
+        "year": 1848,
+        "status": 2,
+        "sources": [
+          "https://example.com/status-change"
+        ]
+      },
+      {
+        "year": 1959,
+        "status": 1,
+        "sources": [
+          "https://example.com/status-change"
+        ]
+      },
+      {
+        "year": 2025,
+        "status": 1,
+        "sources": [
+          "https://example.com/current-status"
+        ]
+      }
+    ],
+    "WV": [
+      {
+        "year": 1863,
+        "status": 0,
+        "sources": [
+          "https://example.com/no-law"
+        ]
+      },
+      {
+        "year": 1863,
+        "status": 2,
+        "sources": [
+          "https://example.com/status-change"
+        ]
+      },
+      {
+        "year": 2025,
+        "status": 2,
+        "sources": [
+          "https://example.com/current-status"
+        ]
+      }
+    ],
+    "WY": [
+      {
+        "year": 1890,
+        "status": 0,
+        "sources": [
+          "https://example.com/no-law"
+        ]
+      },
+      {
+        "year": 1890,
+        "status": 2,
+        "sources": [
+          "https://example.com/status-change"
+        ]
+      },
+      {
+        "year": 2025,
+        "status": 2,
+        "sources": [
+          "https://example.com/current-status"
+        ]
+      }
+    ]
   }
 }

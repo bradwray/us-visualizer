@@ -16,6 +16,7 @@ export default function TimelinePlayer({
   onChange,
 }: TimelinePlayerProps) {
   const [isPlaying, setIsPlaying] = useState(false)
+  const [speed, setSpeed] = useState(1)
   const intervalRef = useRef<NodeJS.Timeout | null>(null)
   const sliderRef = useRef<HTMLInputElement>(null)
   const currentYearRef = useRef(value)
@@ -41,7 +42,6 @@ export default function TimelinePlayer({
         const currentYear = currentYearRef.current
         const nextYear = currentYear + 1
         if (nextYear > maxYear) {
-          // Stop at max year
           setIsPlaying(false)
           if (intervalRef.current) {
             clearInterval(intervalRef.current)
@@ -51,9 +51,9 @@ export default function TimelinePlayer({
         } else {
           onChange(nextYear)
         }
-      }, 1000) // 1 second interval
+      }, 1000 / speed)
     }
-  }, [isPlaying, maxYear, onChange])
+  }, [isPlaying, maxYear, onChange, speed])
 
   // Clean up interval on unmount
   useEffect(() => {
@@ -63,6 +63,30 @@ export default function TimelinePlayer({
       }
     }
   }, [])
+
+  // If speed changes while playing, restart interval
+  useEffect(() => {
+    if (isPlaying) {
+      if (intervalRef.current) {
+        clearInterval(intervalRef.current)
+      }
+      intervalRef.current = setInterval(() => {
+        const currentYear = currentYearRef.current
+        const nextYear = currentYear + 1
+        if (nextYear > maxYear) {
+          setIsPlaying(false)
+          if (intervalRef.current) {
+            clearInterval(intervalRef.current)
+            intervalRef.current = null
+          }
+          onChange(maxYear)
+        } else {
+          onChange(nextYear)
+        }
+      }, 1000 / speed)
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [speed])
 
   // Stop playing when max year is reached
   useEffect(() => {
@@ -85,23 +109,13 @@ export default function TimelinePlayer({
   const percentage = ((value - minYear) / (maxYear - minYear)) * 100
 
   return (
-    <div className="w-full max-w-4xl mx-auto bg-white rounded-lg shadow-lg p-6" data-testid="timeline-player">
-      {/* Title and Current Year */}
-      <div className="text-center mb-6">
-        <h2 className="text-2xl font-bold text-gray-800 mb-2">Timeline Player</h2>
-        <div className="text-3xl font-mono font-bold text-blue-600" data-testid="year-display">
-          {value}
-        </div>
-      </div>
-
-      {/* Controls */}
-      <div className="flex items-center gap-4 mb-6">
+    <div className="w-full max-w-3xl mx-auto" data-testid="timeline-player">
+      <div className="flex items-center gap-2">
         {/* Play/Pause Button */}
         <button
           onClick={togglePlay}
           disabled={value >= maxYear}
-          className={`
-            flex items-center justify-center w-12 h-12 rounded-full transition-all duration-200
+          className={`flex items-center justify-center w-8 h-8 rounded-full transition-all duration-200 text-base
             ${
               value >= maxYear
                 ? 'bg-gray-300 text-gray-500 cursor-not-allowed'
@@ -115,29 +129,48 @@ export default function TimelinePlayer({
           data-testid="play-pause-button"
         >
           {isPlaying ? (
-            // Pause icon
-            <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+            <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
               <path d="M6 4h4v16H6V4zm8 0h4v16h-4V4z" />
             </svg>
           ) : (
-            // Play icon
-            <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+            <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
               <path d="M8 5v14l11-7z" />
             </svg>
           )}
         </button>
 
+        {/* Year Display */}
+        <div className="font-mono font-bold text-blue-600 text-lg w-16 text-center select-none" data-testid="year-display">
+          {value}
+        </div>
+
+        {/* Speed Controls */}
+        <div className="flex items-center gap-1 ml-2">
+          {[1, 2, 4, 6, 10].map((s) => (
+            <button
+              key={s}
+              onClick={() => setSpeed(s)}
+              className={`px-1 py-0.5 rounded text-xs font-semibold border transition-colors duration-150 ${
+                speed === s
+                  ? 'bg-blue-500 text-white border-blue-600'
+                  : 'bg-white text-blue-700 border-blue-300 hover:bg-blue-100'
+              }`}
+              aria-pressed={speed === s}
+              aria-label={`Set speed to ${s}x`}
+              data-testid={`speed-${s}x`}
+            >
+              {s}x
+            </button>
+          ))}
+        </div>
+
         {/* Slider Container */}
-        <div className="flex-1 relative">
-          {/* Slider Track */}
-          <div className="relative h-2 bg-gray-200 rounded-full">
-            {/* Progress Track */}
+        <div className="flex-1 relative ml-4">
+          <div className="relative h-1 bg-gray-200 rounded-full">
             <div
-              className="absolute top-0 left-0 h-2 bg-blue-500 rounded-full transition-all duration-100"
+              className="absolute top-0 left-0 h-1 bg-blue-500 rounded-full transition-all duration-100"
               style={{ width: `${percentage}%` }}
             />
-            
-            {/* Slider Input */}
             <input
               ref={sliderRef}
               type="range"
@@ -145,37 +178,31 @@ export default function TimelinePlayer({
               max={maxYear}
               value={value}
               onChange={handleSliderChange}
-              className="absolute top-0 left-0 w-full h-2 opacity-0 cursor-pointer"
+              className="absolute top-0 left-0 w-full h-1 opacity-0 cursor-pointer"
               aria-label={`Timeline slider, current year: ${value}`}
               data-testid="timeline-slider"
             />
-            
-            {/* Slider Thumb */}
             <div
-              className="absolute top-1/2 transform -translate-y-1/2 -translate-x-1/2 w-6 h-6 bg-white border-4 border-blue-500 rounded-full shadow-lg cursor-pointer transition-all duration-100 hover:scale-110"
+              className="absolute top-1/2 transform -translate-y-1/2 -translate-x-1/2 w-4 h-4 bg-white border-2 border-blue-500 rounded-full shadow cursor-pointer transition-all duration-100 hover:scale-110"
               style={{ left: `${percentage}%` }}
             />
           </div>
-
-          {/* Year Labels */}
-          <div className="flex justify-between mt-2 text-sm text-gray-600">
+          <div className="flex justify-between mt-1 text-xs text-gray-600">
             <span>{minYear}</span>
             <span>{maxYear}</span>
           </div>
         </div>
       </div>
-
-      {/* Status */}
-      <div className="text-center text-sm text-gray-600">
+      <div className="text-center text-xs text-gray-500 mt-1">
         {isPlaying ? (
-          <span className="flex items-center justify-center gap-2">
+          <span className="flex items-center justify-center gap-1">
             <div className="w-2 h-2 bg-green-500 rounded-full animate-pulse" />
-            Playing - Auto-advancing every second
+            Playing at <b>{speed}x</b>
           </span>
         ) : value >= maxYear ? (
-          <span className="text-gray-500">Reached maximum year</span>
+          <span className="text-gray-400">Reached maximum year</span>
         ) : (
-          <span>Click play to auto-advance, or drag the slider to scrub</span>
+          <span>Play or drag to scrub</span>
         )}
       </div>
     </div>

@@ -1,3 +1,6 @@
+.legendItemPreAdmission {
+  background-color: #D1D5DB; /* gray-300 - not yet a state */
+}
 .legendItem {
   width: 1rem;
   height: 1rem;
