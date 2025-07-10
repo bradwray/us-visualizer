@@ -19,7 +19,6 @@ const stateNameToAbbr = {
   'Virginia': 'VA', 'Washington': 'WA', 'West Virginia': 'WV', 'Wisconsin': 'WI', 'Wyoming': 'WY'
 };
 // Helper to get the most recent status entry for a state up to a given year
-import type { MouseEvent } from 'react';
 
 function getStatusEntryForYear(stateAbbr: string, year: number, dataset: LegalDataset) {
   // Try abbreviation first, then full name
@@ -27,7 +26,7 @@ function getStatusEntryForYear(stateAbbr: string, year: number, dataset: LegalDa
   if (!stateData) {
     // Try to find the full name for this abbr
     const fullName = Object.keys(dataset.states).find(
-      k => k.toLowerCase() === stateAbbr.toLowerCase() || k.toLowerCase() === (Object.entries(stateNameToAbbr).find(([name, abbr]) => abbr === stateAbbr)?.[0] || '').toLowerCase()
+      k => k.toLowerCase() === stateAbbr.toLowerCase() || k.toLowerCase() === (Object.entries(stateNameToAbbr).find(([, abbr]) => abbr === stateAbbr)?.[0] || '').toLowerCase()
     );
     if (fullName) stateData = dataset.states[fullName];
   }
@@ -42,15 +41,9 @@ function getStatusEntryForYear(stateAbbr: string, year: number, dataset: LegalDa
   return last;
 }
 
-interface StateHoverCardProps {
-  stateAbbr: string;
-  year: number;
-  dataset: LegalDataset;
-  mouse: { x: number; y: number };
-}
 function StateInfoCard({ stateAbbr, year, dataset, onClose, mouse }: { stateAbbr: string; year: number; dataset: LegalDataset; onClose: () => void; mouse: { x: number; y: number } }) {
   const entry = getStatusEntryForYear(stateAbbr, year, dataset);
-  let catName = entry && Object.keys(dataset.categories).find(
+  const catName = entry && Object.keys(dataset.categories).find(
     (k) => dataset.categories[k] === entry.status
   );
   // Card style: fixed, positioned at click, black text, white bg, clickable links
